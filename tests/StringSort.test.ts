@@ -20,6 +20,10 @@ describe('testing StringSort', () => {
   test('with upper case will be changed to lower case', () => {
     expect(sortStrings('aBceDgZy')).toBe('abcdegyz');
   });
+
+  test('with random string', () => {
+    expect(sortStrings('bncvzxtyuioplkjhgfdswqream')).toBe('abcdefghijklmnopqrstuvwxyz');
+  });
 });
 
 describe('testing sortStringsWithGivenOrder', () => {

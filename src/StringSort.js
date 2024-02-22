@@ -9,6 +9,8 @@ function sortStrings(input) {
 }
 exports.sortStrings = sortStrings;
 function sortStringsWithGivenOrder(input, order) {
+    // input validation here
+    // if the custom order doesn't includ all 26 alphabets or include duplicates the function will return '-1'
     var set = new Set(order);
     if (set.size != 26)
         return '-1';
